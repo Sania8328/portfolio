@@ -72,3 +72,10 @@ export const contactLinks = {
   email: 'mohammedshameem636@gmail.com', // Update with your email
   resume: '/resume.pdf',
 };
+export const personalInfo = {
+  name: 'Sania',
+  title: 'Full-Stack Engineer & AI Enthusiast',
+  location: 'Hyderabad, India',
+  phone: '+91-8328373721',
+  about: '2nd Year Software Engineering Student building innovative solutions with React, Java, and Machine Learning. Passionate about solving real-world problems through technology.',
+};

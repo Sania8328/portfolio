@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiDownload } from 'react-icons/fi';
+import { personalInfo } from '../constants/projectData';
 
 export default function Hero() {
   const containerVariants = {
@@ -46,27 +47,36 @@ export default function Hero() {
         {/* Location Tag */}
         <motion.div variants={itemVariants} className="flex justify-center mb-8">
           <div className="inline-block bg-dark-card border border-dark-border rounded-full px-4 py-2">
-            <span className="text-cyber-blue animate-pulse-soft">📍 Hyderabad, India</span>
+            <span className="text-cyber-blue animate-pulse-soft">📍 {personalInfo.location}</span>
           </div>
         </motion.div>
 
-        {/* Main Headline */}
+        {/* Main Greeting Headline */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl font-bold text-center text-white mb-6 leading-tight"
+          className="text-5xl md:text-7xl font-bold text-center text-white mb-4 leading-tight"
         >
-          Building the Future of{' '}
+          Hi, I'm{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-blue to-cyan-300">
-            Civic Tech
+            Sania
           </span>
+          <br />
+          the Digital Architect
         </motion.h1>
 
-        {/* Sub-headline */}
+        {/* Sub-heading */}
+        <motion.h2
+          variants={itemVariants}
+          className="text-xl md:text-2xl text-center text-gray-300 mb-8 max-w-3xl mx-auto"
+        >
+        </motion.h2>
+
+        {/* About/Description */}
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl text-gray-300 text-center mb-12 max-w-2xl mx-auto"
+          className="text-lg md:text-lg text-gray-400 text-center mb-12 max-w-2xl mx-auto"
         >
-          Full-Stack Engineer & AI Enthusiast | 2nd Year SDE Student | Crafting scalable solutions with React, Java, and Machine Learning
+          {personalInfo.about}
         </motion.p>
 
         {/* CTA Button */}
