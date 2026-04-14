@@ -70,7 +70,7 @@ export const contactLinks = {
   github: 'https://github.com/Sania8328',
   linkedin: 'https://www.linkedin.com/in/sania-begum-379b313a8?utm_source=share_via&utm_content=profile&utm_medium=member_android',
   email: 'mohammedshameem636@gmail.com', // Update with your email
-  resume: '/resume.pdf',
+  resume: '/SaniaResume.pdf',
 };
 export const personalInfo = {
   name: 'Sania',

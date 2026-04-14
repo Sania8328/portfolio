@@ -26,7 +26,7 @@ export default function Hero() {
   // Function to download resume
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = '/SaniaResume.pdf';
     link.download = 'Sania-Resume.pdf';
     document.body.appendChild(link);
     link.click();
